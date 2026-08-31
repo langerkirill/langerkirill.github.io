@@ -442,6 +442,7 @@ footer {
 .reveal.visible .skill-group:nth-child(4) { animation: revealUp .5s ease-out .2s both; }
 .reveal.visible .skill-group:nth-child(5) { animation: revealUp .5s ease-out .25s both; }
 .reveal.visible .skill-group:nth-child(6) { animation: revealUp .5s ease-out .3s both; }
+.reveal.visible .skill-group:nth-child(7) { animation: revealUp .5s ease-out .35s both; }
 
 /* === Nav Active === */
 .nav-links a.active {
