@@ -159,9 +159,10 @@ a:hover { color: var(--route-ink); }
 .proof { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 32px 56px; margin-top: 88px; padding-top: 40px; border-top: 1px solid #3A3E3A; }
 .proof h3, .sk-head h3 { margin: 0; font-size: 28px; font-weight: 800; font-stretch: 115%; line-height: 1.1; letter-spacing: -0.015em; }
 .proof-intro p { margin: 14px 0 0; color: var(--night-text); max-width: 40ch; }
-.proof-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
-.proof-ic { width: 28px; height: 28px; color: var(--ground); }
-.proof-list h4 { margin: 14px 0 6px; font-size: 17px; font-weight: 750; }
+.proof-list { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid #3A3E3A; }
+.proof-list li { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 8px 32px; align-items: baseline; padding: 16px 0; border-top: 1px solid #3A3E3A; }
+.proof-ic { width: 18px; height: 18px; flex: none; color: var(--ground); position: relative; top: 2px; }
+.proof-list h4 { display: flex; gap: 10px; margin: 0; font-size: 17px; font-weight: 750; }
 .proof-list p { margin: 0; font-size: 15.5px; color: var(--night-text); }
 
 /* Sankey */
@@ -270,7 +271,7 @@ span.sk-after { display: none; }
 .foot { padding-top: 24px; padding-bottom: 32px; font-size: 13px; color: var(--ink-3); }
 
 /* Responsive */
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .hero { grid-template-columns: minmax(0, 1fr); }
   .hero-copy { padding-top: 16px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 56px; align-items: start; }
   .hero-copy > * { grid-column: 1; }
@@ -280,7 +281,7 @@ span.sk-after { display: none; }
 @media (max-width: 760px) {
   .hero-copy { display: block; }
   .hero-copy > .facts { margin-top: 32px; }
-  .proof-list { grid-template-columns: minmax(0, 1fr); }
+  .proof-list li { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 980px) {
   .moves { grid-template-columns: repeat(2, minmax(0, 1fr)); }
