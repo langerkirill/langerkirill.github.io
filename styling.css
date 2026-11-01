@@ -105,6 +105,7 @@ a:hover { color: var(--route-ink); }
 .lbl { position: absolute; max-width: 34%; font-size: clamp(10.5px, 1.82cqi, 14px); line-height: 1.4; }
 .lbl b { font-weight: 700; }
 .lbl-r { text-align: right; }
+.lbl .nw { white-space: nowrap; }
 .lbl .hand { font-weight: 600; }
 .lbl a.hand { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .note { position: absolute; font-family: var(--hand); font-weight: 600; line-height: 1.32; color: var(--route-ink); font-size: clamp(11px, 1.96cqi, 15px); }

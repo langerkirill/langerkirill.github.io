@@ -154,12 +154,12 @@
           </g>
         </svg>
 
-        <div class="lbl" style="left: 54.2%; top: 84%; max-width: 31%;"><b>P1 · Research technician</b><br>Harvard / Boston Children's · 2015–17<br><a class="hand" href="https://pubmed.ncbi.nlm.nih.gov/31786014/" target="_blank" rel="noopener">published in Neuron on the neuroscience of motivation</a></div>
-        <div class="lbl lbl-r" style="right: 64.5%; top: 71.4%;"><b>P2 · Software engineer</b><br>Tendril/Uplight · 2018–21</div>
-        <div class="lbl" style="left: 60%; top: 57.4%;"><b>P3 · Senior software engineer</b><br>Cognito Health · 2021–25</div>
-        <div class="lbl lbl-r" style="right: 47.6%; top: 44%;"><b>P4 · Senior SE II / Tech lead</b><br>Aledade · 2025–26</div>
+        <div class="lbl" style="left: 54.2%; top: 84%; max-width: 31%;"><b>P1 · Research technician</b><br>Harvard / Boston Children's · <span class="nw">2015–17</span><br><a class="hand" href="https://pubmed.ncbi.nlm.nih.gov/31786014/" target="_blank" rel="noopener">published in Neuron on the neuroscience of motivation</a></div>
+        <div class="lbl lbl-r" style="right: 64.5%; top: 71.4%;"><b>P2 · Software engineer</b><br>Tendril/Uplight · <span class="nw">2018–21</span></div>
+        <div class="lbl" style="left: 60%; top: 57.4%;"><b>P3 · Senior software engineer</b><br>Cognito Health · <span class="nw">2021–25</span></div>
+        <div class="lbl lbl-r" style="right: 47.6%; top: 44%;"><b>P4 · Senior SE II / Tech lead</b><br>Aledade · <span class="nw">2025–26</span></div>
         <div class="note" style="right: 47.6%; top: 48.6%; max-width: 42%; text-align: right;">money pitch: ingesting billions of dollars of Aledade's revenue data</div>
-        <div class="lbl" style="left: 43.4%; top: 29%;"><b>P5 · Staff SE / Tech lead</b><br>Aledade · since Oct 2026</div>
+        <div class="lbl" style="left: 43.4%; top: 29%;"><b>P5 · Staff SE / Tech lead</b><br>Aledade · <span class="nw">since Oct 2026</span></div>
         <div class="note" style="left: 79%; top: 37.6%; max-width: 20%;">you are here, on the crux (the hardest move): the data-loss scanner</div>
         <div class="feat" aria-hidden="true" style="left: 4%; top: 6.2%;">rim</div>
         <div class="feat" aria-hidden="true" style="left: 68.4%; top: 30.9%;">roof</div>
@@ -517,27 +517,53 @@
   var head = tip.querySelector('strong');
   var body = tip.querySelector('span');
   var mode = null, current = null;
-  function show(el, x, y, how) {
+  function labelBoxes(el) {
+    var svg = el.ownerSVGElement;
+    if (!svg) return [];
+    return Array.prototype.filter.call(svg.querySelectorAll('text'), function (t) {
+      return getComputedStyle(t).visibility !== 'hidden';
+    }).map(function (t) { return t.getBoundingClientRect(); });
+  }
+  function hits(box, boxes) {
+    return boxes.some(function (r) {
+      return !(r.right < box.left || r.left > box.right || r.bottom < box.top || r.top > box.bottom);
+    });
+  }
+  function place(el, xs, y) {
+    var w = tip.offsetWidth, h = tip.offsetHeight, boxes = labelBoxes(el), first = null;
+    for (var i = 0; i < xs.length; i++) {
+      var x = xs[i];
+      var lefts = x > window.innerWidth * 0.55 ? [x - w - 18, x + 18] : [x + 18, x - w - 18];
+      var tops = [y - h - 14, y + 18];
+      for (var j = 0; j < lefts.length; j++) {
+        for (var k = 0; k < tops.length; k++) {
+          var left = Math.max(8, Math.min(lefts[j], window.innerWidth - w - 8));
+          var top = Math.max(8, Math.min(tops[k], window.innerHeight - h - 8));
+          var box = { left: left, top: top, right: left + w, bottom: top + h };
+          if (!first) first = box;
+          if (!hits(box, boxes)) return box;
+        }
+      }
+    }
+    return first;
+  }
+  function show(el, xs, y, how) {
     mode = how; current = el;
     var parts = (el.getAttribute('data-tip') || '').split('|');
     head.textContent = parts[0] || '';
     body.textContent = parts[1] || '';
     tip.hidden = false;
-    var w = tip.offsetWidth, h = tip.offsetHeight;
-    var left = x > window.innerWidth * 0.55 ? x - w - 18 : x + 18;
-    left = Math.max(8, Math.min(left, window.innerWidth - w - 8));
-    var top = y - h - 14;
-    if (top < 8) top = y + 18;
-    tip.style.left = left + 'px';
-    tip.style.top = top + 'px';
+    var box = place(el, xs, y);
+    tip.style.left = box.left + 'px';
+    tip.style.top = box.top + 'px';
   }
   function hide() { tip.hidden = true; mode = null; current = null; }
   function anchor(el) {
     var r = el.getBoundingClientRect();
-    show(el, r.left + r.width * 0.45, r.top + r.height / 2, 'focus');
+    show(el, [r.left + r.width * 0.85, r.left + r.width * 0.5, r.left + r.width * 0.2], r.top + r.height / 2, 'focus');
   }
   fig.querySelectorAll('[data-tip]').forEach(function (el) {
-    el.addEventListener('pointermove', function (e) { show(el, e.clientX, e.clientY, 'pointer'); });
+    el.addEventListener('pointermove', function (e) { show(el, [e.clientX], e.clientY, 'pointer'); });
     el.addEventListener('pointerleave', hide);
     el.addEventListener('focus', function () { anchor(el); });
     el.addEventListener('blur', hide);
