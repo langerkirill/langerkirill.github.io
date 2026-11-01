@@ -21,13 +21,28 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-alu" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8E938D"></stop><stop offset=".42" stop-color="#F4F5F2"></stop><stop offset=".68" stop-color="#C6C9C3"></stop><stop offset="1" stop-color="#7E837D"></stop></linearGradient>
+    <linearGradient id="g-alu-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8E938D"></stop><stop offset=".42" stop-color="#F4F5F2"></stop><stop offset=".68" stop-color="#C6C9C3"></stop><stop offset="1" stop-color="#7E837D"></stop></linearGradient>
+    <linearGradient id="g-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5E635D"></stop><stop offset=".45" stop-color="#D3D6D0"></stop><stop offset=".7" stop-color="#8F948E"></stop><stop offset="1" stop-color="#50554F"></stop></linearGradient>
+    <linearGradient id="g-red" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0584D"></stop><stop offset=".35" stop-color="#D7261E"></stop><stop offset=".8" stop-color="#A3170F"></stop><stop offset="1" stop-color="#7A100B"></stop></linearGradient>
+    <linearGradient id="g-red-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0584D"></stop><stop offset=".35" stop-color="#D7261E"></stop><stop offset=".8" stop-color="#A3170F"></stop><stop offset="1" stop-color="#7A100B"></stop></linearGradient>
+    <linearGradient id="g-rubber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0E0F0E"></stop><stop offset=".45" stop-color="#454845"></stop><stop offset="1" stop-color="#111211"></stop></linearGradient>
+    <linearGradient id="g-rubber-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E0F0E"></stop><stop offset=".45" stop-color="#454845"></stop><stop offset="1" stop-color="#111211"></stop></linearGradient>
+    <pattern id="g-rope" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="5" height="5" fill="#DADCD7"></rect><rect width="1.6" height="5" fill="#8A8F89"></rect></pattern>
+    <symbol id="sk-ic-code" viewBox="0 0 12 12"><path d="M4.2 2.5 L1.2 6 L4.2 9.5 M7.8 2.5 L10.8 6 L7.8 9.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+    <symbol id="sk-ic-query" viewBox="0 0 12 12"><rect x="1.3" y="1.8" width="9.4" height="8.4" rx="1" fill="none" stroke="currentColor" stroke-width="1.3"></rect><path d="M1.3 4.6 H10.7 M1.3 7.4 H10.7 M5 1.8 V10.2" fill="none" stroke="currentColor" stroke-width="1.1"></path></symbol>
+    <symbol id="sk-ic-file" viewBox="0 0 12 12"><path d="M2.5 1.2 H7.3 L9.8 3.7 V10.8 H2.5 Z M7.3 1.2 V3.7 H9.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"></path><path d="M4 6.3 H8.3 M4 8.5 H8.3" stroke="currentColor" stroke-width="1"></path></symbol>
+  </defs>
+</svg>
 
 <nav class="wrap nav" aria-label="Main">
   <a href="#top" class="nav-name">K. Langer</a>
   <div class="nav-links">
-    <a href="#crux">Scanner</a>
-    <a href="#pitches">Experience</a>
-    <a href="#rack">Skills &amp; projects</a>
+    <a href="#crux" class="nav-anchor">Scanner</a>
+    <a href="#pitches" class="nav-anchor">Experience</a>
+    <a href="#rack" class="nav-anchor">Skills &amp; projects</a>
     <a href="resume.html">Resume</a>
     <a href="mailto:langerkirill@gmail.com" class="btn btn-red btn-sm">Email me</a>
   </div>
@@ -85,7 +100,7 @@
             <path d="M124 200 C132 170 126 140 140 104" stroke-width="1.4"></path>
             <path d="M129 200 C137 170 131 140 145 104" stroke-width="7" stroke-dasharray="1.2 6" stroke-linecap="butt"></path>
             <path d="M690 860 C682 800 698 740 686 680 C678 640 690 610 684 590" stroke-width="1.2"></path>
-            <path d="M712 500 C704 470 716 440 708 404" stroke-width="1.1"></path>
+            <path d="M712 520 C704 490 716 460 708 430" stroke-width="1.1"></path>
             <path d="M690 250 C682 210 696 170 686 120" stroke-width="1.4"></path>
             <path d="M685 250 C677 210 691 170 681 120" stroke-width="7" stroke-dasharray="1.2 6" stroke-linecap="butt"></path>
             <path d="M522 750 C514 700 530 660 520 610" stroke-width="1"></path>
@@ -142,10 +157,10 @@
         <div class="lbl" style="left: 60%; top: 57.4%;"><b>P3 · Senior software engineer</b><br>Cognito Health · 2021–25</div>
         <div class="lbl lbl-r" style="right: 47.6%; top: 44%;"><b>P4 · Senior SE II / Tech lead</b><br>Aledade · 2025–26</div>
         <div class="note" style="right: 47.6%; top: 48.6%; max-width: 42%; text-align: right;">money pitch: ingesting billions of dollars of Aledade's revenue data</div>
-        <div class="lbl" style="left: 26.5%; top: 25.5%;"><b>P5 · Staff SE / Tech lead</b><br>Aledade · Oct 2026 – · you are here</div>
-        <div class="note" style="left: 79%; top: 37.6%; max-width: 20%;">crux: the data-loss scanner</div>
+        <div class="lbl" style="left: 43.4%; top: 29%;"><b>P5 · Staff SE / Tech lead</b><br>Aledade · since Oct 2026</div>
+        <div class="note" style="left: 79%; top: 37.6%; max-width: 20%;">you are here, on the crux (the hardest move): the data-loss scanner</div>
         <div class="feat" aria-hidden="true" style="left: 4%; top: 6.2%;">rim</div>
-        <div class="feat" aria-hidden="true" style="left: 61.5%; top: 32.6%;">roof</div>
+        <div class="feat" aria-hidden="true" style="left: 68.4%; top: 30.9%;">roof</div>
         <div class="feat" aria-hidden="true" style="left: 60.5%; top: 47.4%;">chimney</div>
         <div class="feat" aria-hidden="true" style="right: 49.6%; top: 40.2%;">hanging belay</div>
         <div class="feat" aria-hidden="true" style="left: 68.2%; top: 53.6%;">bivy ledge</div>
@@ -168,7 +183,7 @@
         <li>Software engineer, Tendril/Uplight · 2018–21</li>
         <li>Senior software engineer, Cognito Health · 2021–25</li>
         <li>Senior SE II / Tech lead, Aledade · 2025–26 (money pitch: billions of dollars of revenue data)</li>
-        <li><b>Staff SE / Tech lead, Aledade · Oct 2026 – (on the crux)</b></li>
+        <li><b>Staff SE / Tech lead, Aledade · since Oct 2026: the red marker, on the crux</b></li>
       </ol>
     </figure>
   </header>
@@ -176,61 +191,86 @@
   <section id="crux" class="crux" aria-labelledby="crux-h">
     <div class="wrap">
       <h2 id="crux-h">The crux: an AI scanner that finds where data goes missing</h2>
-      <p class="crux-lede">In climbing, the crux is the hardest move on a route, the one that decides whether you top out. Mine right now is my newest project as a staff engineer: a scanner that reads ingestion pipelines and their databases, finds the gaps where records can be lost, ranks the fixes, and opens the pull request.</p>
+      <p class="crux-lede">In climbing, the crux is the hardest move on a route, the one that decides whether you top out. Mine right now is my newest project as a staff engineer: agents that read our ingestion pipelines, prove where records can be lost, measure what each loss costs downstream, and open the pull requests that close it.</p>
 
       <ol class="moves">
         <li class="move">
           <span class="move-n" aria-hidden="true">1</span>
-          <h3>Review</h3>
+          <h3>Flag</h3>
           <p class="move-who">Haiku + Opus</p>
-          <p class="move-what">Agents run four-lens workflow reviews over the pipeline code, flagging every place a record could drop.</p>
+          <p class="move-what">Four-lens workflow reviews read every ingestion pipeline and flag each place a record could drop.</p>
         </li>
         <li class="move">
           <span class="move-n" aria-hidden="true">2</span>
-          <h3>Trace upstream</h3>
-          <p class="move-who">Opus</p>
-          <p class="move-what">Follows each gap upstream, reading the database itself, to find where the loss really starts.</p>
+          <h3>Prove it upstream</h3>
+          <p class="move-who">Opus, evidence agent</p>
+          <p class="move-what">Walks upstream from each flag: reads the code, queries the tables, reads the raw files, until the gap is proven or ruled out.</p>
         </li>
         <li class="move">
           <span class="move-n" aria-hidden="true">3</span>
           <h3>Measure downstream</h3>
-          <p class="move-who">Opus</p>
-          <p class="move-what">Writes the impact analysis and a Sankey of what is lost, so the fix order is obvious to anyone.</p>
+          <p class="move-who">Opus, impact agent</p>
+          <p class="move-what">Follows each proven gap into the tables and reports it feeds, counts the records at stake, and draws the Sankey below.</p>
         </li>
         <li class="move">
           <span class="move-n" aria-hidden="true">4</span>
           <h3>Fix</h3>
           <p class="move-who">Pull request</p>
-          <p class="move-what">The highest-impact gaps come back as pull requests, ready for review.</p>
+          <p class="move-what">The biggest gaps come back as pull requests. Once they merge, the scanner reruns until nothing is lost.</p>
         </li>
       </ol>
 
-      <figure class="sankey">
-        <div class="sankey-scroll">
-          <svg viewBox="0 0 1000 350" role="img" aria-label="Illustrative Sankey: 100% of records received, 76% loaded, with losses of 6% malformed rows, 9% schema drift, 4% key collisions and 5% late files">
-            <path d="M40 40 H980 V192 H900 V202 H710 V210 H480 V228 H250 V240 H40 Z" fill="#4A4F49"></path>
-            <g class="rt-fill">
-              <path d="M250 228 C290 228 290 300 330 300 L370 300 L370 312 L330 312 C284 312 280 240 250 240 Z"></path>
-              <path d="M480 210 C520 210 520 300 560 300 L600 300 L600 318 L560 318 C508 318 508 228 480 228 Z"></path>
-              <path d="M710 202 C750 202 750 300 790 300 L830 300 L830 308 L790 308 C742 308 742 210 710 210 Z"></path>
-              <path d="M900 192 C930 192 930 300 960 300 L980 300 L980 310 L960 310 C922 310 922 202 900 202 Z"></path>
-            </g>
-            <g font-family="Archivo, sans-serif" font-size="14" font-weight="700" fill="#F3F4F1">
-              <text x="40" y="28">Received 100%</text>
-              <text x="250" y="28">Parsed 94%</text>
-              <text x="480" y="28">Validated 85%</text>
-              <text x="710" y="28">Deduped 81%</text>
-              <text x="980" y="28" text-anchor="end">Loaded 76%</text>
-            </g>
-            <g font-family="Archivo, sans-serif" font-size="13.5" fill="#FF8A80">
-              <text x="250" y="340">−6% malformed rows</text>
-              <text x="480" y="340">−9% schema drift</text>
-              <text x="710" y="340">−4% key collisions</text>
-              <text x="980" y="340" text-anchor="end">−5% late files</text>
-            </g>
-          </svg>
+      <div class="proof">
+        <div class="proof-intro">
+          <h3>The hard part is proof</h3>
+          <p>Flagging a possible gap is easy. Proving it is not, and the kind of proof a gap needs decides how the upstream agent works.</p>
         </div>
-        <figcaption>Illustrative Sankey with sample numbers: the kind of chart the downstream agent draws. Not production data.</figcaption>
+        <ul class="proof-list">
+          <li>
+            <svg class="proof-ic" aria-hidden="true"><use href="#sk-ic-code"></use></svg>
+            <h4>Proven in code</h4>
+            <p>The transform drops rows on its face, like a schema change it never handles. The agent cites the exact lines.</p>
+          </li>
+          <li>
+            <svg class="proof-ic" aria-hidden="true"><use href="#sk-ic-query"></use></svg>
+            <h4>Needs a table query</h4>
+            <p>The code looks right but the counts disagree. The agent queries source and target tables and shows the difference.</p>
+          </li>
+          <li>
+            <svg class="proof-ic" aria-hidden="true"><use href="#sk-ic-file"></use></svg>
+            <h4>Needs a file read</h4>
+            <p>The loss happens before any table, in a malformed or late file. The agent reads the raw files to show which records never arrived.</p>
+          </li>
+        </ul>
+      </div>
+
+      <figure class="sankey" aria-labelledby="sk-title">
+        <input type="radio" name="sk-state" id="sk-r-before" class="sk-radio" checked>
+        <input type="radio" name="sk-state" id="sk-r-after" class="sk-radio">
+        <div class="sk-head">
+          <div>
+            <h3 id="sk-title">What the downstream agent draws</h3>
+            <p>One monthly load, from the files that arrive to the tables finance reads. Switch to after the fixes to see the end state.</p>
+          </div>
+          <div class="sk-toggle" role="group" aria-label="Show the load">
+            <label for="sk-r-before">Before fixes</label>
+            <label for="sk-r-after">After fixes</label>
+          </div>
+        </div>
+        <div class="sk-body">
+          <svg class="sk-svg sk-desk" viewBox="0 0 1100 551" role="img" aria-label="Sankey of a monthly load: 1,000k records from claims, eligibility and attribution files flow through the ingestion pipeline. Before fixes 920k reach the finance tables and 80k are lost to schema drift, malformed rows, late files and key collisions. After fixes all 1,000k arrive."><g font-size="12.5" fill="#A9ADA6" font-weight="600"><text x="202" y="36" text-anchor="end">Source files</text><text x="790" y="36">Where records end up</text></g><path class="sk-link" d="M202 70 C351 70 351 90 500 90 L500 288.4 C351 288.4 351 268.4 202 268.4 Z" fill="#8A9088" fill-opacity=".32" data-tip="620k records|Claims files into the ingestion pipeline" tabindex="0"></path><path class="sk-link" d="M202 288.4 C351 288.4 351 288.4 500 288.4 L500 365.2 C351 365.2 351 365.2 202 365.2 Z" fill="#8A9088" fill-opacity=".32" data-tip="240k records|Eligibility files into the ingestion pipeline" tabindex="0"></path><path class="sk-link" d="M202 385.2 C351 385.2 351 365.2 500 365.2 L500 410 C351 410 351 430 202 430 Z" fill="#8A9088" fill-opacity=".32" data-tip="140k records|Attribution files into the ingestion pipeline" tabindex="0"></path><rect x="190" y="70" width="12" height="198.4" fill="#C9CCC6" rx="2"></rect><rect x="190" y="288.4" width="12" height="76.8" fill="#C9CCC6" rx="2"></rect><rect x="190" y="385.2" width="12" height="44.8" fill="#C9CCC6" rx="2"></rect><rect x="500" y="90" width="12" height="320" fill="#C9CCC6" rx="2"></rect><text x="176" y="166.2" text-anchor="end" font-size="14.5" font-weight="700" fill="#F3F4F1">Claims files</text><text x="176" y="184.2" text-anchor="end" font-size="13" fill="#A9ADA6">620k records</text><text x="176" y="323.8" text-anchor="end" font-size="14.5" font-weight="700" fill="#F3F4F1">Eligibility files</text><text x="176" y="341.8" text-anchor="end" font-size="13" fill="#A9ADA6">240k records</text><text x="176" y="404.6" text-anchor="end" font-size="14.5" font-weight="700" fill="#F3F4F1">Attribution files</text><text x="176" y="422.6" text-anchor="end" font-size="13" fill="#A9ADA6">140k records</text><text x="506" y="60" text-anchor="middle" font-size="14.5" font-weight="700" fill="#F3F4F1">Ingestion pipeline</text><text x="506" y="78" text-anchor="middle" font-size="13" fill="#A9ADA6">Databricks · 1,000k records</text><g class="sk-state sk-before"><path class="sk-link" d="M512 90 C651 90 651 70 790 70 L790 364.4 C651 364.4 651 384.4 512 384.4 Z" fill="#8A9088" fill-opacity=".32" data-tip="920k records|Arrived in the finance tables" tabindex="0"></path><path class="sk-link sk-loss" d="M512 384.4 C651 384.4 651 414.56 790 414.56 L790 425.44 C651 425.44 651 395.28 512 395.28 Z" fill="#E0362C" fill-opacity=".9" data-tip="34k records lost|Schema drift at validate, proven in code" tabindex="0"></path><path class="sk-link sk-loss" d="M512 395.28 C651 395.28 651 450.48 790 450.48 L790 457.52 C651 457.52 651 402.32 512 402.32 Z" fill="#E0362C" fill-opacity=".9" data-tip="22k records lost|Malformed rows at parse, needs a file read" tabindex="0"></path><path class="sk-link sk-loss" d="M512 402.32 C651 402.32 651 485.44 790 485.44 L790 490.56 C651 490.56 651 407.44 512 407.44 Z" fill="#E0362C" fill-opacity=".9" data-tip="16k records lost|Late files at load, needs a table query" tabindex="0"></path><path class="sk-link sk-loss" d="M512 407.44 C651 407.44 651 520.72 790 520.72 L790 523.28 C651 523.28 651 410 512 410 Z" fill="#E0362C" fill-opacity=".9" data-tip="8k records lost|Key collisions at dedupe, needs a table query" tabindex="0"></path><rect x="790" y="70" width="12" height="294.4" fill="#C9CCC6" rx="2"></rect><rect x="790" y="414.56" width="12" height="10.88" fill="#E0362C" rx="1"></rect><rect x="790" y="450.48" width="12" height="7.04" fill="#E0362C" rx="1"></rect><rect x="790" y="485.44" width="12" height="5.12" fill="#E0362C" rx="1"></rect><rect x="790" y="520.72" width="12" height="2.56" fill="#E0362C" rx="1"></rect><text x="816" y="214.2" font-size="14.5" font-weight="700" fill="#F3F4F1">Finance tables</text><text x="816" y="232.2" font-size="13" fill="#A9ADA6">920k arrived · 92%</text><text x="816" y="418" font-size="13.5" font-weight="600" fill="#F3F4F1">Schema drift at validate <tspan font-weight="400" fill="#A9ADA6">· 34k lost</tspan></text><use href="#sk-ic-code" x="816" y="424" width="12" height="12"></use><text x="833" y="434" font-size="12.5" fill="#A9ADA6">proven in code</text><text x="816" y="452" font-size="13.5" font-weight="600" fill="#F3F4F1">Malformed rows at parse <tspan font-weight="400" fill="#A9ADA6">· 22k lost</tspan></text><use href="#sk-ic-file" x="816" y="458" width="12" height="12"></use><text x="833" y="468" font-size="12.5" fill="#A9ADA6">needs a file read</text><text x="816" y="486" font-size="13.5" font-weight="600" fill="#F3F4F1">Late files at load <tspan font-weight="400" fill="#A9ADA6">· 16k lost</tspan></text><use href="#sk-ic-query" x="816" y="492" width="12" height="12"></use><text x="833" y="502" font-size="12.5" fill="#A9ADA6">needs a table query</text><text x="816" y="520" font-size="13.5" font-weight="600" fill="#F3F4F1">Key collisions at dedupe <tspan font-weight="400" fill="#A9ADA6">· 8k lost</tspan></text><use href="#sk-ic-query" x="816" y="526" width="12" height="12"></use><text x="833" y="536" font-size="12.5" fill="#A9ADA6">needs a table query</text></g><g class="sk-state sk-after"><path class="sk-link" d="M512 90 C651 90 651 70 790 70 L790 364.4 C651 364.4 651 384.4 512 384.4 Z" fill="#8A9088" fill-opacity=".32" data-tip="920k records|Arrived in the finance tables" tabindex="0"></path><path class="sk-link sk-rec" d="M512 384.4 C651 384.4 651 364.4 790 364.4 L790 390 C651 390 651 410 512 410 Z" fill="#4592D0" fill-opacity=".9" data-tip="80k records recovered|Every fixed gap now lands in the finance tables" tabindex="0"></path><rect x="790" y="70" width="12" height="294.4" fill="#C9CCC6" rx="2"></rect><rect x="790" y="364.4" width="12" height="25.6" fill="#4592D0" rx="2"></rect><rect x="790" y="419" width="12" height="2" fill="#A9ADA6" rx="1"></rect><rect x="790" y="453" width="12" height="2" fill="#A9ADA6" rx="1"></rect><rect x="790" y="487" width="12" height="2" fill="#A9ADA6" rx="1"></rect><rect x="790" y="521" width="12" height="2" fill="#A9ADA6" rx="1"></rect><text x="816" y="227" font-size="14.5" font-weight="700" fill="#F3F4F1">Finance tables</text><text x="816" y="245" font-size="13" fill="#A9ADA6">1,000k arrived · 100%</text><text x="816" y="263" font-size="13" fill="#A9ADA6">incl. 80k recovered by fixes</text><text x="816" y="418" font-size="13.5" font-weight="600" fill="#F3F4F1">Schema drift at validate <tspan font-weight="400" fill="#A9ADA6">· 0 lost · fixed</tspan></text><use href="#sk-ic-code" x="816" y="424" width="12" height="12"></use><text x="833" y="434" font-size="12.5" fill="#A9ADA6">proven in code</text><text x="816" y="452" font-size="13.5" font-weight="600" fill="#F3F4F1">Malformed rows at parse <tspan font-weight="400" fill="#A9ADA6">· 0 lost · fixed</tspan></text><use href="#sk-ic-file" x="816" y="458" width="12" height="12"></use><text x="833" y="468" font-size="12.5" fill="#A9ADA6">needs a file read</text><text x="816" y="486" font-size="13.5" font-weight="600" fill="#F3F4F1">Late files at load <tspan font-weight="400" fill="#A9ADA6">· 0 lost · fixed</tspan></text><use href="#sk-ic-query" x="816" y="492" width="12" height="12"></use><text x="833" y="502" font-size="12.5" fill="#A9ADA6">needs a table query</text><text x="816" y="520" font-size="13.5" font-weight="600" fill="#F3F4F1">Key collisions at dedupe <tspan font-weight="400" fill="#A9ADA6">· 0 lost · fixed</tspan></text><use href="#sk-ic-query" x="816" y="526" width="12" height="12"></use><text x="833" y="536" font-size="12.5" fill="#A9ADA6">needs a table query</text></g></svg>
+          <svg class="sk-svg sk-mob" viewBox="0 0 360 418" role="img" aria-label="Sankey of a monthly load: 1,000k records from claims, eligibility and attribution files flow through the ingestion pipeline. Before fixes 920k reach the finance tables and 80k are lost to schema drift, malformed rows, late files and key collisions. After fixes all 1,000k arrive."><path class="sk-link" d="M46 44 C109 44 109 60 172 60 L172 221.2 C109 221.2 109 205.2 46 205.2 Z" fill="#8A9088" fill-opacity=".32" data-tip="620k records|Claims files into the ingestion pipeline" tabindex="0"></path><path class="sk-link" d="M46 221.2 C109 221.2 109 221.2 172 221.2 L172 283.6 C109 283.6 109 283.6 46 283.6 Z" fill="#8A9088" fill-opacity=".32" data-tip="240k records|Eligibility files into the ingestion pipeline" tabindex="0"></path><path class="sk-link" d="M46 299.6 C109 299.6 109 283.6 172 283.6 L172 320 C109 320 109 336 46 336 Z" fill="#8A9088" fill-opacity=".32" data-tip="140k records|Attribution files into the ingestion pipeline" tabindex="0"></path><rect x="36" y="44" width="10" height="161.2" fill="#C9CCC6" rx="2"></rect><rect x="36" y="221.2" width="10" height="62.4" fill="#C9CCC6" rx="2"></rect><rect x="36" y="299.6" width="10" height="36.4" fill="#C9CCC6" rx="2"></rect><rect x="172" y="60" width="10" height="260" fill="#C9CCC6" rx="2"></rect><g><circle cx="20" cy="124.6" r="9" fill="#161816" stroke="#F3F4F1" stroke-width="1.6"></circle><text x="20" y="128.6" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">1</text></g><g><circle cx="20" cy="252.4" r="9" fill="#161816" stroke="#F3F4F1" stroke-width="1.6"></circle><text x="20" y="256.4" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">2</text></g><g><circle cx="20" cy="317.8" r="9" fill="#161816" stroke="#F3F4F1" stroke-width="1.6"></circle><text x="20" y="321.8" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">3</text></g><text x="177" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#F3F4F1">Ingestion</text><g class="sk-state sk-before"><path class="sk-link" d="M182 60 C241 60 241 44 300 44 L300 283.2 C241 283.2 241 299.2 182 299.2 Z" fill="#8A9088" fill-opacity=".32" data-tip="920k records|Arrived in the finance tables" tabindex="0"></path><path class="sk-link sk-loss" d="M182 299.2 C241 299.2 241 321.58 300 321.58 L300 330.42 C241 330.42 241 308.04 182 308.04 Z" fill="#E0362C" fill-opacity=".9" data-tip="34k records lost|Schema drift at validate, proven in code" tabindex="0"></path><path class="sk-link sk-loss" d="M182 308.04 C241 308.04 241 347.14 300 347.14 L300 352.86 C241 352.86 241 313.76 182 313.76 Z" fill="#E0362C" fill-opacity=".9" data-tip="22k records lost|Malformed rows at parse, needs a file read" tabindex="0"></path><path class="sk-link sk-loss" d="M182 313.76 C241 313.76 241 371.92 300 371.92 L300 376.08 C241 376.08 241 317.92 182 317.92 Z" fill="#E0362C" fill-opacity=".9" data-tip="16k records lost|Late files at load, needs a table query" tabindex="0"></path><path class="sk-link sk-loss" d="M182 317.92 C241 317.92 241 396.96 300 396.96 L300 399.04 C241 399.04 241 320 182 320 Z" fill="#E0362C" fill-opacity=".9" data-tip="8k records lost|Key collisions at dedupe, needs a table query" tabindex="0"></path><rect x="300" y="44" width="10" height="239.2" fill="#C9CCC6" rx="2"></rect><rect x="300" y="321.58" width="10" height="8.84" fill="#E0362C" rx="1"></rect><rect x="300" y="347.14" width="10" height="5.72" fill="#E0362C" rx="1"></rect><rect x="300" y="371.92" width="10" height="4.16" fill="#E0362C" rx="1"></rect><rect x="300" y="396.96" width="10" height="2.08" fill="#E0362C" rx="1"></rect><g><circle cx="326" cy="163.6" r="9" fill="#161816" stroke="#F3F4F1" stroke-width="1.6"></circle><text x="326" y="167.6" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">4</text></g><g><circle cx="326" cy="326" r="9" fill="#161816" stroke="#E0362C" stroke-width="1.6"></circle><text x="326" y="330" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">5</text></g><g><circle cx="326" cy="350" r="9" fill="#161816" stroke="#E0362C" stroke-width="1.6"></circle><text x="326" y="354" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">6</text></g><g><circle cx="326" cy="374" r="9" fill="#161816" stroke="#E0362C" stroke-width="1.6"></circle><text x="326" y="378" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">7</text></g><g><circle cx="326" cy="398" r="9" fill="#161816" stroke="#E0362C" stroke-width="1.6"></circle><text x="326" y="402" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">8</text></g></g><g class="sk-state sk-after"><path class="sk-link" d="M182 60 C241 60 241 44 300 44 L300 283.2 C241 283.2 241 299.2 182 299.2 Z" fill="#8A9088" fill-opacity=".32" data-tip="920k records|Arrived in the finance tables" tabindex="0"></path><path class="sk-link sk-rec" d="M182 299.2 C241 299.2 241 283.2 300 283.2 L300 304 C241 304 241 320 182 320 Z" fill="#4592D0" fill-opacity=".9" data-tip="80k records recovered|Every fixed gap now lands in the finance tables" tabindex="0"></path><rect x="300" y="44" width="10" height="239.2" fill="#C9CCC6" rx="2"></rect><rect x="300" y="283.2" width="10" height="20.8" fill="#4592D0" rx="2"></rect><rect x="300" y="325" width="10" height="2" fill="#A9ADA6" rx="1"></rect><rect x="300" y="349" width="10" height="2" fill="#A9ADA6" rx="1"></rect><rect x="300" y="373" width="10" height="2" fill="#A9ADA6" rx="1"></rect><rect x="300" y="397" width="10" height="2" fill="#A9ADA6" rx="1"></rect><g><circle cx="326" cy="174" r="9" fill="#161816" stroke="#F3F4F1" stroke-width="1.6"></circle><text x="326" y="178" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">4</text></g><g><circle cx="326" cy="326" r="9" fill="#161816" stroke="#F3F4F1" stroke-width="1.6"></circle><text x="326" y="330" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">5</text></g><g><circle cx="326" cy="350" r="9" fill="#161816" stroke="#F3F4F1" stroke-width="1.6"></circle><text x="326" y="354" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">6</text></g><g><circle cx="326" cy="374" r="9" fill="#161816" stroke="#F3F4F1" stroke-width="1.6"></circle><text x="326" y="378" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">7</text></g><g><circle cx="326" cy="398" r="9" fill="#161816" stroke="#F3F4F1" stroke-width="1.6"></circle><text x="326" y="402" text-anchor="middle" font-size="11" font-weight="800" fill="#F3F4F1">8</text></g></g></svg>
+          <ol class="sk-key"><li><b>Claims files</b> · 620k records</li><li><b>Eligibility files</b> · 240k records</li><li><b>Attribution files</b> · 140k records</li><li><b>Finance tables</b> · <span class="sk-before">920k arrived</span><span class="sk-after">1,000k arrived, incl. 80k recovered</span></li><li class="sk-key-loss"><b>Schema drift at validate</b> · <span class="sk-before">34k lost</span><span class="sk-after">0 lost, fixed</span><br><span class="sk-ev">proven in code</span></li><li class="sk-key-loss"><b>Malformed rows at parse</b> · <span class="sk-before">22k lost</span><span class="sk-after">0 lost, fixed</span><br><span class="sk-ev">needs a file read</span></li><li class="sk-key-loss"><b>Late files at load</b> · <span class="sk-before">16k lost</span><span class="sk-after">0 lost, fixed</span><br><span class="sk-ev">needs a table query</span></li><li class="sk-key-loss"><b>Key collisions at dedupe</b> · <span class="sk-before">8k lost</span><span class="sk-after">0 lost, fixed</span><br><span class="sk-ev">needs a table query</span></li></ol>
+          <p class="sk-verdict"><span class="sk-before">80k records lost a month across four gaps.</span><span class="sk-after">Zero data loss: every record arrives.</span></p>
+        </div>
+        <div class="sk-legend" aria-hidden="true">
+          <span><i style="background: #8A9088;"></i>Records that arrive</span>
+          <span><i style="background: #E0362C;"></i>Records lost</span>
+          <span><i style="background: #4592D0;"></i>Recovered by fixes</span>
+        </div>
+        <details class="sk-table"><summary>See the numbers</summary><div class="sk-table-scroll"><table><thead><tr><th scope="col">Flow (thousands of records)</th><th scope="col">Before fixes</th><th scope="col">After fixes</th><th scope="col">How the loss was proven</th></tr></thead><tbody><tr><th scope="row">Claims files → ingestion</th><td>620k</td><td>620k</td><td></td></tr><tr><th scope="row">Eligibility files → ingestion</th><td>240k</td><td>240k</td><td></td></tr><tr><th scope="row">Attribution files → ingestion</th><td>140k</td><td>140k</td><td></td></tr><tr><th scope="row">Ingestion → finance tables</th><td>920k</td><td>1,000k</td><td></td></tr><tr><th scope="row">Lost: schema drift at validate</th><td>34k</td><td>0</td><td>proven in code</td></tr><tr><th scope="row">Lost: malformed rows at parse</th><td>22k</td><td>0</td><td>needs a file read</td></tr><tr><th scope="row">Lost: late files at load</th><td>16k</td><td>0</td><td>needs a table query</td></tr><tr><th scope="row">Lost: key collisions at dedupe</th><td>8k</td><td>0</td><td>needs a table query</td></tr></tbody></table></div></details>
+        <figcaption>Illustrative sample: the record counts are made up to show the shape of the analysis. Not production data.</figcaption>
+        <div class="sk-tip" role="tooltip" hidden><strong></strong><span></span></div>
       </figure>
     </div>
   </section>
@@ -238,7 +278,7 @@
   <section id="pitches" class="wrap pitches" aria-labelledby="pitches-h">
     <h2 id="pitches-h" class="sec-h">Pitches, newest first</h2>
     <article class="pitch">
-      <div class="pitch-n"><span class="now">P5</span> · 2026 –</div>
+      <div class="pitch-n"><span class="now">P5</span> · 2026–now</div>
       <div>
         <h3>Staff Software Engineer / Tech Lead · Aledade</h3>
         <p>Building the AI data-loss scanner, and still running MSSP financial data ingestion. Leading data engineering for Databricks-based healthcare finance systems in value-based care.</p>
@@ -279,35 +319,150 @@
     <p class="rack-intro">Every route needs a rack. Here's what I bring.</p>
     <ul class="rack">
       <li class="gear">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#161816" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 17 C25 9 14 11 12 19 C10 27 18 31 26 27 Z" fill="#E4E6E1"></path><path d="M32 17 C39 9 50 11 52 19 C54 27 46 31 38 27 Z" fill="#E4E6E1"></path><circle cx="32" cy="17" r="2.6" fill="#161816"></circle><path d="M32 19 V48 M22 37 H42 M23 37 L19 27 M41 37 L45 27"></path><path class="rt-stroke" d="M32 48 C24 48 23 61 32 61 C41 61 40 48 32 48 Z" stroke-width="3"></path></svg>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <g stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round">
+            <path d="M56 21 C46 18 36 24 32 34 C30 40 31 45 33 48 L39 48 C41 42 46 37 53 33 Z" fill="#8E140F"></path>
+            <path d="M64 21 C74 18 84 24 88 34 C90 40 89 45 87 48 L81 48 C79 42 74 37 67 33 Z" fill="#8E140F"></path>
+            <path d="M53 18 C40 13 24 18 16 30 C12 37 12 44 15 51 L23 52 C26 44 34 38 45 35 C49 33 52 30 54 27 Z" fill="url(#g-red)"></path>
+            <path d="M67 18 C80 13 96 18 104 30 C108 37 108 44 105 51 L97 52 C94 44 86 38 75 35 C71 33 68 30 66 27 Z" fill="url(#g-red)"></path>
+            <circle cx="29" cy="34" r="3.2" fill="#F3F4F1"></circle>
+            <circle cx="91" cy="34" r="3.2" fill="#F3F4F1"></circle>
+          </g>
+          <path d="M18.5 31.5 C15 38 15 44.5 17.5 50" fill="none" stroke="#5E0D09" stroke-width="2.4" stroke-dasharray="1 1.7"></path>
+          <path d="M101.5 31.5 C105 38 105 44.5 102.5 50" fill="none" stroke="#5E0D09" stroke-width="2.4" stroke-dasharray="1 1.7"></path>
+          <path d="M46 66 L36 46 M74 66 L84 46" stroke="#7E837D" stroke-width="1.4" fill="none"></path>
+          <rect x="57" y="29" width="6" height="56" rx="3" fill="url(#g-rubber)" stroke="#1E201E" stroke-width="1.2"></rect>
+          <rect x="41" y="22.5" width="38" height="7" rx="3.5" fill="url(#g-alu-v)" stroke="#1E201E" stroke-width="1.2"></rect>
+          <circle cx="43" cy="26" r="3.8" fill="url(#g-alu-v)" stroke="#1E201E" stroke-width="1.2"></circle>
+          <circle cx="77" cy="26" r="3.8" fill="url(#g-alu-v)" stroke="#1E201E" stroke-width="1.2"></circle>
+          <rect x="39" y="62" width="42" height="8" rx="4" fill="url(#g-rubber-v)" stroke="#1E201E" stroke-width="1.2"></rect>
+          <path d="M47 64.5 V67.5 M53 64.5 V67.5 M67 64.5 V67.5 M73 64.5 V67.5" stroke="#6B706A" stroke-width="1"></path>
+          <path d="M55 88 C49 98 50 113 60 116 C70 113 71 98 65 88" fill="none" stroke="#1E201E" stroke-width="7.2" stroke-linecap="round"></path>
+          <path d="M55 88 C49 98 50 113 60 116 C70 113 71 98 65 88" fill="none" stroke="#E2E4E0" stroke-width="5" stroke-linecap="round"></path>
+          <path d="M55 88 C49 98 50 113 60 116 C70 113 71 98 65 88" fill="none" stroke="#C4201A" stroke-width="1.1" stroke-dasharray="3 2.2"></path>
+          <rect x="50" y="81" width="20" height="7" rx="3.5" fill="url(#g-red-v)" stroke="#1E201E" stroke-width="1.2"></rect>
+        </svg>
         <div><p class="gear-name">Cams <span>· load-bearing</span></p><p class="gear-tech">Databricks, PySpark, Airflow</p></div>
       </li>
       <li class="gear">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#161816" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="rt-fill" d="M23 8 H41 L38 27 H26 Z"></path><path d="M27 15 H37" stroke="#FFFFFF" stroke-width="1.2"></path><path d="M29 27 V43 M35 27 V43"></path><rect x="27" y="42" width="10" height="6" rx="1" fill="#161816"></rect><path d="M30 48 C23 52 24 61 32 61 C40 61 41 52 34 48"></path></svg>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <path d="M54 52 C54 62 57 68 58.5 74 M66 52 C66 62 63 68 61.5 74" fill="none" stroke="#1E201E" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M54 52 C54 62 57 68 58.5 74 M66 52 C66 62 63 68 61.5 74" fill="none" stroke="#C3C6C0" stroke-width="2.2" stroke-linecap="round"></path>
+          <path d="M56 84 C44 92 45 113 60 115 C75 113 76 92 64 84" fill="none" stroke="#1E201E" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M56 84 C44 92 45 113 60 115 C75 113 76 92 64 84" fill="none" stroke="#C3C6C0" stroke-width="2.2" stroke-linecap="round"></path>
+          <path d="M56 84 C44 92 45 113 60 115 C75 113 76 92 64 84" fill="none" stroke="#7E837D" stroke-width=".8" stroke-dasharray="1.6 1.6"></path>
+          <rect x="53" y="71" width="14" height="14" rx="2.5" fill="url(#g-alu)" stroke="#1E201E" stroke-width="1.2"></rect>
+          <path d="M53.6 75.5 H66.4 M53.6 80.5 H66.4" stroke="#7E837D" stroke-width="1"></path>
+          <g stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round">
+            <path d="M38 15 C52 11 68 11 82 15 L90 11 C76 7 60 7 46 11 Z" fill="#EE6B61"></path>
+            <path d="M82 15 L90 11 L84 50 L76 53 Z" fill="#7A100B"></path>
+            <path d="M38 15 C52 11 68 11 82 15 L76 53 C65 56 55 56 45 53 Z" fill="url(#g-red-v)"></path>
+          </g>
+          <path d="M48 19 L46.5 49" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".3"></path>
+          <ellipse cx="54" cy="52.6" rx="2.6" ry="1.2" fill="#3A0A07"></ellipse>
+          <ellipse cx="66" cy="52.6" rx="2.6" ry="1.2" fill="#3A0A07"></ellipse>
+        </svg>
         <div><p class="gear-name">Nuts <span>· simple, passive, bomber</span></p><p class="gear-tech">SQL, PostgreSQL, DynamoDB</p></div>
       </li>
       <li class="gear">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#161816" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 42 L55 11 L56 13.5 L24 47 Z" fill="#E4E6E1"></path><path d="M9 41 C9 37 13 35 17 37 L24 44 C26 48 24 53 20 53 L14 53 C10 53 9 49 9 46 Z" fill="#E4E6E1"></path><circle cx="15.5" cy="45.5" r="3.2"></circle><path class="rt-stroke" d="M14 49 C8 56 13 62 20 59" stroke-width="2.6"></path></svg>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <g transform="rotate(-35 60 60)">
+            <path d="M24 58 C14 66 12 84 26 92 C36 97 46 92 48 84" fill="none" stroke="#1E201E" stroke-width="5" stroke-linecap="round"></path>
+            <path d="M24 58 C14 66 12 84 26 92 C36 97 46 92 48 84" fill="none" stroke="#D7261E" stroke-width="3.2" stroke-linecap="round"></path>
+            <path d="M30 55 L110 58.6 L114 60 L110 61.4 L30 65 Z" fill="url(#g-steel)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+            <path d="M34 60 L106 60" stroke="#F4F5F2" stroke-width=".8" opacity=".7"></path>
+            <path d="M10 34 C10 29 14 26 19 26 L27 26 C32 26 35 29 35 34 L35 70 L10 70 Z" fill="url(#g-steel)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+            <ellipse cx="22.5" cy="39.5" rx="5.6" ry="6.8" fill="#F3F4F1" stroke="#1E201E" stroke-width="1.2"></ellipse>
+            <path d="M22.5 46 C21 52 21.5 56 24 58" fill="none" stroke="#D7261E" stroke-width="3.2" stroke-linecap="round"></path>
+            <rect x="5" y="52" width="6" height="18" rx="1.2" fill="#6E736D" stroke="#1E201E" stroke-width="1.2"></rect>
+            <path d="M15 57 l5 -2 M17 63 l5 -2 M25 60 l4 -1.6" stroke="#4A4F49" stroke-width="1"></path>
+          </g>
+        </svg>
         <div><p class="gear-name">Piton <span>· piton, Python, close enough</span></p><p class="gear-tech">Python</p></div>
       </li>
       <li class="gear">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#161816" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect class="rt-fill" x="27" y="22" width="10" height="21" rx="3" stroke="none"></rect><path d="M26 4 C20 4 18 9 19 14 L21 22 C22 26 25 27 28 27 L36 27 C40 27 43 24 42 19 L40 9 C39 6 37 4 34 4 Z"></path><path d="M41 12 L38 22"></path><path d="M26 38 C20 38 18 43 19 48 L21 56 C22 60 25 61 28 61 L36 61 C40 61 43 58 42 53 L40 43 C39 40 37 38 34 38 Z"></path><path d="M41 46 C38 49 38 53 40 56"></path></svg>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <rect x="49" y="40" width="20" height="38" rx="6" fill="url(#g-red-v)" stroke="#1E201E" stroke-width="1.2"></rect>
+          <ellipse cx="59" cy="47" rx="6.5" ry="2.6" fill="#3A0A07"></ellipse>
+          <path d="M52 56 l2 -2 l2 2 l2 -2 l2 2 l2 -2 l2 2 l2 -2 l2 2 M52 62 l2 -2 l2 2 l2 -2 l2 2 l2 -2 l2 2 l2 -2 l2 2" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".85"></path>
+          <rect x="48" y="66" width="22" height="9" rx="3" fill="url(#g-rubber-v)" stroke="#1E201E" stroke-width="1.2"></rect>
+          <path d="M47 6 C39 6 35 11 36 18 L40 44 C41 50 45 53 51 53 L62 53 C69 53 73 48 72 42 L68 14 C67 9 63 6 58 6 Z M49.5 11 C44 11 41 15 42 20 L45.5 42 C46 46 48 48 52 48 L60.5 48 C65 48 67 45 66.5 41 L63 17 C62.5 13 60 11 57 11 Z" fill="url(#g-alu)" fill-rule="evenodd" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M64.6 13.5 L68.6 42" stroke="#1E201E" stroke-width="1.4"></path>
+          <path d="M47 68 C39 68 35 73 36 80 L40 106 C41 112 45 115 51 115 L62 115 C69 115 73 110 72 104 L68 76 C67 71 63 68 58 68 Z M49.5 73 C44 73 41 77 42 82 L45.5 104 C46 108 48 110 52 110 L60.5 110 C65 110 67 107 66.5 103 L63 79 C62.5 75 60 73 57 73 Z" fill="url(#g-red)" fill-rule="evenodd" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M64 77 C60 87 60 96 67.6 104" fill="none" stroke="#1E201E" stroke-width="1.4"></path>
+        </svg>
         <div><p class="gear-name">Quickdraws <span>· clip everything together</span></p><p class="gear-tech">REST APIs, GraphQL</p></div>
       </li>
       <li class="gear">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#161816" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="rt-stroke" d="M18 2 V62" stroke-width="3.5"></path><rect x="12" y="4" width="24" height="26" rx="5" fill="#E4E6E1"></rect><path class="rt-stroke" d="M18 4 V30" stroke-width="3.5"></path><circle cx="28" cy="16" r="5.5" fill="#F3F4F1"></circle><path d="M22.5 13 H20.5 M22.5 16 H20.5 M22.5 19 H20.5"></path><path d="M30 30 C40 31 46 37 46 46 V58"></path><path d="M41 40 C44 44 46 48 46 52 V58 C46 61 43 62 41 62 C38 62 37 60 37 58 V50 C37 46 36 43 34 41 Z" fill="#161816"></path></svg>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <path d="M46 52 H67 C75 52 81 58 81 66 V104 C81 110 76 115 70 115 H52 C48 115 46 112 46 108 Z" fill="url(#g-red)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <rect x="53" y="60" width="11" height="34" rx="5.5" fill="#F3F4F1" stroke="#1E201E" stroke-width="1.2"></rect>
+          <path d="M68 56 C74 58 77 62 77 68 V102 C77 107 73 111 68 111 Z" fill="url(#g-rubber)" stroke="#1E201E" stroke-width="1.2"></path>
+          <path d="M70 66 H76 M70 74 H76 M70 82 H76 M70 90 H76 M70 98 H76" stroke="#6B706A" stroke-width="1"></path>
+          <circle cx="55" cy="104" r="3.2" fill="#F3F4F1" stroke="#1E201E" stroke-width="1.2"></circle>
+          <circle cx="63.5" cy="106" r="2.4" fill="#F3F4F1" stroke="#1E201E" stroke-width="1.2"></circle>
+          <path d="M30 6 H60 C67 6 72 11 72 18 V44 C72 50 67 55 61 55 H30 Z" fill="url(#g-red)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <rect x="35.5" y="2" width="9" height="116" rx="4.5" fill="url(#g-rope)" stroke="#1E201E" stroke-width="1.2"></rect>
+          <rect x="29.5" y="9" width="7" height="42" rx="3" fill="url(#g-red)" stroke="#1E201E" stroke-width="1.2"></rect>
+          <circle cx="54" cy="26" r="9.5" fill="url(#g-steel)" stroke="#1E201E" stroke-width="1.2"></circle>
+          <path d="M45 19 l-2.6 1.2 l2.6 1.2 M44.5 23 l-2.6 1.2 l2.6 1.2 M44.5 27 l-2.6 1.2 l2.6 1.2 M45 31 l-2.6 1.2 l2.6 1.2" fill="none" stroke="#1E201E" stroke-width="1"></path>
+          <circle cx="55" cy="26" r="2.2" fill="#1E201E"></circle>
+          <path d="M60 37 L68 43" stroke="#1E201E" stroke-width="3.2" stroke-linecap="round"></path>
+          <circle cx="64" cy="14" r="2.6" fill="#F3F4F1" stroke="#1E201E" stroke-width="1.2"></circle>
+        </svg>
         <div><p class="gear-name">Ascenders <span>· the fast way up the fixed lines</span></p><p class="gear-tech">Claude, Claude Code, Codex, OpenAI, Gemini, Grok, Crew AI</p></div>
       </li>
       <li class="gear">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#161816" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M33 14 L29 58" stroke-width="3"></path><path d="M7 18 L10 9 H33 C42 9 50 13 56 24 L54 26 C48 18 41 15 33 15 H14 L12 18 Z" fill="#E4E6E1"></path><path class="rt-stroke" d="M30.6 44 L29.6 56" stroke-width="5"></path><path d="M29 58 L28.6 63"></path></svg>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <path d="M55.5 30 L64.5 30 L63.5 104 L56.5 104 Z" fill="url(#g-alu)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M55.9 74 L64.1 74 L63.6 102 L56.4 102 Z" fill="url(#g-red)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M56.4 79 H63.8 M56.3 84 H63.7 M56.3 89 H63.7 M56.4 94 H63.6 M56.4 99 H63.6" stroke="#6B0F0A" stroke-width=".9"></path>
+          <rect x="55.6" y="101" width="8.8" height="3.6" fill="#3A3E3A" stroke="#1E201E" stroke-width="1"></rect>
+          <path d="M56.5 104.6 L63.5 104.6 L61 117 L59 117 Z" fill="url(#g-steel)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M41 16 L22 13.5 C16 13.5 11 16.5 8.5 22 C13 21 18 21 22 22 L41 26 Z" fill="url(#g-steel)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M79 15 C92 16 104 22 112 36 L113 41.5 C106 33 94 28 79 27 Z" fill="url(#g-steel)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M84 28.4 L86 31.6 L88 29.2 L90 32.5 L92 30.1 L94 33.5 L96 31.1 L98 34.5 L100 32.1 L102 35.6 L104 33.2 L106 36.8 L108 34.6 L110 38.4" fill="none" stroke="#1E201E" stroke-width="1"></path>
+          <path d="M44 12 H76 C78 12 79 13 79 15 V29 C79 31 78 32 76 32 H44 C42 32 41 31 41 29 V15 C41 13 42 12 44 12 Z" fill="url(#g-steel)" stroke="#1E201E" stroke-width="1.2"></path>
+          <ellipse cx="60" cy="22" rx="5" ry="3.2" fill="#F3F4F1" stroke="#1E201E" stroke-width="1.2"></ellipse>
+        </svg>
         <div><p class="gear-name">Ice axe <span>· for the alpine, cloudy stuff</span></p><p class="gear-tech">AWS (SAM, Lambda, CloudFormation, S3), Firebase, Docker</p></div>
       </li>
       <li class="gear">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#161816" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 42 C6 33 12 27 20 25 L30 20 C35 17 40 18 42 23 L46 30 C52 32 57 36 58 41 C59 45 55 47 50 47 H13 C9 47 6 45 6 42 Z" fill="#E4E6E1"></path><path d="M6 42 C22 45 42 45 58 41"></path><path d="M12 48 C24 50 44 50 54 46" stroke-width="3"></path><path class="rt-stroke" d="M24 25 L32 38 M31 21 L39 34" stroke-width="3"></path><path d="M9 33 L6 29"></path></svg>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <path d="M22 52 C16 43 19 36 27 38 C31 39 32 44 30 50" fill="none" stroke="#1E201E" stroke-width="3" stroke-linecap="round"></path>
+          <path d="M22 52 C30 45 44 41 58 43 C70 45 80 50 90 57 L101 65 C93 69 87 73 81 77 L24 77 C21 69 20 60 22 52 Z" fill="url(#g-red)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M22 52 C28 46 38 43 48 43 L54 45 C44 46 34 49 27 54 Z" fill="#3A3E3A" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M28 57 C40 51 54 49 64 52 C72 55 80 59 88 64" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-dasharray="2 2" opacity=".75"></path>
+          <path d="M41 44 L47 43.4 L55 71 L49 72.2 Z" fill="url(#g-rubber)" stroke="#1E201E" stroke-width="1.1" stroke-linejoin="round"></path>
+          <path d="M53 44.6 L59 45 L66 69.5 L60 70.8 Z" fill="url(#g-rubber)" stroke="#1E201E" stroke-width="1.1" stroke-linejoin="round"></path>
+          <path d="M41.5 45.5 L46.5 45 M53.5 46.5 L58.5 46.8" stroke="#C4201A" stroke-width="2.2" stroke-linecap="round"></path>
+          <path d="M82 63 C93 61 106 65 111 74 C110 79 102 81 92 80 C88 74 86 68 82 63 Z" fill="url(#g-rubber)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M13 57 C9 65 10 72 14 78 L27 78 C24 72 23 64 24 57 Z" fill="url(#g-rubber)" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M13 76 C14 84 20 89 30 90 L86 92 C99 92 108 86 112 76 C109 80 101 82 92 81 L28 79 C20 79 15 78 13 76 Z" fill="#161816" stroke="#1E201E" stroke-width="1.2" stroke-linejoin="round"></path>
+          <path d="M28 78.6 L90 80.4" stroke="#6B706A" stroke-width=".8"></path>
+        </svg>
         <div><p class="gear-name">Shoes <span>· the footwork people see</span></p><p class="gear-tech">React, React Native, TypeScript, Flutter, Kotlin</p></div>
       </li>
       <li class="gear">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g class="rt-stroke"><ellipse cx="29" cy="33" rx="17" ry="20"></ellipse><ellipse cx="32" cy="33" rx="17" ry="20"></ellipse><ellipse cx="35" cy="33" rx="17" ry="20"></ellipse><path d="M27 52 C25 58 21 61 16 62 M38 52 C40 57 45 60 50 60"></path></g><path d="M24 12 C28 17 36 17 40 12" stroke="#161816" stroke-width="3"></path></svg>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <g fill="none" stroke-linecap="round">
+            <g transform="rotate(-7 60 70)"><ellipse cx="54" cy="70" rx="33" ry="40" stroke="#5E0D09" stroke-width="6.6"></ellipse><ellipse cx="54" cy="70" rx="33" ry="40" stroke="#D7261E" stroke-width="5"></ellipse><ellipse cx="54" cy="70" rx="33" ry="40" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="1.2 3.4" opacity=".45"></ellipse></g>
+            <g transform="rotate(-2 60 70)"><ellipse cx="58" cy="70" rx="33" ry="40" stroke="#5E0D09" stroke-width="6.6"></ellipse><ellipse cx="58" cy="70" rx="33" ry="40" stroke="#D7261E" stroke-width="5"></ellipse><ellipse cx="58" cy="70" rx="33" ry="40" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="1.2 3.4" opacity=".45"></ellipse></g>
+            <g transform="rotate(3 60 70)"><ellipse cx="62" cy="70" rx="33" ry="40" stroke="#5E0D09" stroke-width="6.6"></ellipse><ellipse cx="62" cy="70" rx="33" ry="40" stroke="#D7261E" stroke-width="5"></ellipse><ellipse cx="62" cy="70" rx="33" ry="40" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="1.2 3.4" opacity=".45"></ellipse></g>
+            <g transform="rotate(8 60 70)"><ellipse cx="66" cy="70" rx="33" ry="40" stroke="#5E0D09" stroke-width="6.6"></ellipse><ellipse cx="66" cy="70" rx="33" ry="40" stroke="#D7261E" stroke-width="5"></ellipse><ellipse cx="66" cy="70" rx="33" ry="40" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="1.2 3.4" opacity=".45"></ellipse></g>
+            <path d="M55 22 C50 12 44 7 35 7 M65 22 C70 13 77 9 86 10" stroke="#5E0D09" stroke-width="6.6"></path>
+            <path d="M55 22 C50 12 44 7 35 7 M65 22 C70 13 77 9 86 10" stroke="#D7261E" stroke-width="5"></path>
+            <path d="M55 22 C50 12 44 7 35 7 M65 22 C70 13 77 9 86 10" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="1.2 3.4" opacity=".45"></path>
+          </g>
+          <g stroke="#1E201E" stroke-width="1">
+            <rect x="49" y="21" width="22" height="5.5" rx="2.75" fill="url(#g-red-v)"></rect>
+            <rect x="49" y="26.5" width="22" height="5.5" rx="2.75" fill="url(#g-red-v)"></rect>
+            <rect x="49" y="32" width="22" height="5.5" rx="2.75" fill="url(#g-red-v)"></rect>
+            <rect x="49" y="37.5" width="22" height="5.5" rx="2.75" fill="url(#g-red-v)"></rect>
+          </g>
+          <rect x="31" y="4.5" width="6" height="5" rx="1" fill="#161816"></rect>
+          <rect x="84" y="7.5" width="6" height="5" rx="1" fill="#161816"></rect>
+        </svg>
         <div><p class="gear-name">Rope <span>· catches every fall</span></p><p class="gear-tech">Git, GitHub Actions, CircleCI</p></div>
       </li>
     </ul>
@@ -351,5 +506,37 @@
 </main>
 
 <footer class="wrap foot">© 2026 Kirill Langer · Topo drawn for this site, not to scale</footer>
+<script>
+(function () {
+  var fig = document.querySelector('.sankey');
+  if (!fig) return;
+  var tip = fig.querySelector('.sk-tip');
+  var head = tip.querySelector('strong');
+  var body = tip.querySelector('span');
+  function show(el, x, y) {
+    var parts = (el.getAttribute('data-tip') || '').split('|');
+    head.textContent = parts[0] || '';
+    body.textContent = parts[1] || '';
+    tip.hidden = false;
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    var left = Math.max(8, Math.min(x + 16, window.innerWidth - w - 8));
+    var top = y - h - 14;
+    if (top < 8) top = y + 18;
+    tip.style.left = left + 'px';
+    tip.style.top = top + 'px';
+  }
+  function hide() { tip.hidden = true; }
+  fig.querySelectorAll('[data-tip]').forEach(function (el) {
+    el.addEventListener('pointermove', function (e) { show(el, e.clientX, e.clientY); });
+    el.addEventListener('pointerleave', hide);
+    el.addEventListener('focus', function () {
+      var r = el.getBoundingClientRect();
+      show(el, r.left + r.width / 2, r.top + r.height / 2);
+    });
+    el.addEventListener('blur', hide);
+  });
+  fig.querySelectorAll('.sk-radio').forEach(function (r) { r.addEventListener('change', hide); });
+})();
+</script>
 </body>
 </html>
