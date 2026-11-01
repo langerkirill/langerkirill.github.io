@@ -543,6 +543,7 @@
     el.addEventListener('blur', hide);
   });
   fig.querySelectorAll('.sk-radio').forEach(function (r) { r.addEventListener('change', hide); });
+  window.addEventListener('scroll', hide, { passive: true });
 })();
 </script>
 </body>
